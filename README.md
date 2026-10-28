@@ -1,13 +1,13 @@
 # 🏛️ Creator Core Engine
 
-> **The Anti-Slop Content Operating System for AI Coding Agents and Human Creators.**  
-> Transform AI from a generator of generic corporate slop into an authentic, deeply grounded extension of your real-world expertise.
+> **The Full-Stack Anti-Slop Content Operating System for AI Coding Agents and Human Creators.**  
+> Transform AI from a generator of generic corporate noise into an end-to-end studio: from authentic identity extraction to 30-45s Reels scripts, high-save carousels, and verified viral threads.
 
 [🇷🇺 Читать инструкцию на русском](README_RU.md) • [Templates](templates/) • [Examples](examples/) • [CLI Linter](tools/lint_content.py)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](tools/lint_content.py)
-[![Architecture: Creator Core](https://img.shields.io/badge/Architecture-Identity%20%2B%20Compendium-orange.svg)](#architecture)
+[![Architecture: Creator Core](https://img.shields.io/badge/Architecture-Full--Stack%20Studio-orange.svg)](#architecture)
 
 ---
 
@@ -25,51 +25,69 @@ Why does this happen? **Because LLMs have no body, no biological limits, no pers
 
 ---
 
-## ⚡ The Solution: The 4-Tier Architecture
+## ⚡ The Solution: The 3-Phase Content Studio
 
-**Creator Core Engine** stops AI from generating content out of thin air. Instead, content is synthesized from the collision between **the author's human limits** and **a curated 4-tier domain compendium**, strictly enforced by an automated anti-slop gate.
+**Creator Core Engine** stops AI from generating content out of thin air. Instead, it operates as a full-stack media team divided into three coordinated phases:
 
 ```mermaid
 flowchart TD
-    subgraph HumanDNA["1. IDENTITY_CORE.md (Author DNA)"]
-        A1["Biological Rhythms & Limits"]
-        A2["Lived Crises & Scars"]
-        A3["Anti-Values (Industry Rebellion)"]
-        A4["Linguistic Code & Taboos"]
+    subgraph Phase1["PHASE 1: Knowledge & Strategy"]
+        A1["identity-extractor (Extracts Author DNA)"]
+        A2["compendium-builder (4-Tier Domain Vault)"]
+        A3["content-synthesizer (Combinatorial Collisions)"]
     end
 
-    subgraph DomainVault["2. DOMAIN_COMPENDIUM.md (Knowledge Vault)"]
-        B1["Layer 1: Philosophy & First Principles (30%)"]
-        B2["Layer 2: Psychology & Cognitive Mechanics (30%)"]
-        B3["Layer 3: Biology / Hard Science (20%)"]
-        B4["Layer 4: Applied Framework / Tool (20%)"]
+    subgraph Phase2["PHASE 2: Production Formats"]
+        B1["reels-scriptwriter (30-45s Shooting Scripts + 26 Hooks)"]
+        B2["carousel-architect (1080x1350 High-Save Slides)"]
+        B3["threads-creator (500-char Dialogue Series)"]
+        B4["motion-producer (Remotion Animation + AI B-Roll)"]
     end
 
-    HumanDNA --> Engine["3. SYNTHESIS MATRIX (Combinatorial Collision)"]
-    DomainVault --> Engine
+    subgraph Phase3["PHASE 3: Quality Gate"]
+        C1["tools/lint_content.py (Automated Anti-Slop Linter)"]
+        C2["antislop-linter (Zero Em-dashes / Zero Clichés)"]
+    end
 
-    Engine --> Draft["Raw Draft Angle"]
-    Draft --> Linter["4. lint_content.py (Anti-Slop Gate)"]
-    
-    Linter -- "Violations (Em-dashes / Clichés)" --> Rejection["Reject & Rewrite"]
-    Rejection --> Engine
-    Linter -- "Exit Code 0 (Clean & Human)" --> Published["5. Ready for Threads / Reels / Newsletter"]
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+    Phase3 -- "Violations" --> Phase2
+    Phase3 -- "Exit Code 0" --> Live["Ready to Publish / Schedule"]
 ```
 
 ---
 
 ## 📦 What's Inside
 
-| Component | Location | Purpose |
+### 1. Agent Skills (`.agents/skills/`)
+| Skill | Phase | Description |
 | :--- | :--- | :--- |
-| **Agent Skills** | `.agents/skills/` | Pre-configured skills for Antigravity, Claude Code, and Cursor (`identity-extractor`, `compendium-builder`, `content-synthesizer`, `antislop-linter`). |
-| **Templates** | `templates/` | Production-ready markdown blueprints for your identity DNA, domain vault, and synthesis matrix. |
-| **CLI Linter** | `tools/lint_content.py` | Deterministic Python linter catching em-dashes, clickbait markers, and platform length limits. |
-| **Living Examples** | `examples/` | Real-world implementations for a Systems Researcher and a Biotech/Health Specialist. |
+| **`creator-core`** | Master | Main orchestrator routing requests across all subagents. |
+| **`identity-extractor`** | Strategy | Conducts a 15-minute diagnostic interview to extract your human limits and scars. |
+| **`compendium-builder`** | Strategy | Maps 4 foundational domain layers (Philosophy, Psychology, Science, Tool). |
+| **`content-synthesizer`** | Strategy | Collides identity limits with domain models to produce non-obvious angles. |
+| **`reels-scriptwriter`** | Production | Generates 30-45s vertical video scripts, teleprompter voiceover, and SEO captions. |
+| **`carousel-architect`** | Production | Designs 10-slide 1080×1350 carousels structured for maximal Saves and Shares. |
+| **`threads-creator`** | Production | Writes conversational threads and daily fillers under 500 characters. |
+| **`motion-producer`** | Production | Tri-modal Remotion animation with Kowalski spring physics and AI B-roll. |
+| **`antislop-linter`** | Gate | Automated quality assurance blocking em-dashes, corporate slop, and bad CTAs. |
+
+### 2. Blueprints & Templates (`templates/`)
+* **`IDENTITY_CORE.template.md`**: Template for author constraints, values, and voice code.
+* **`DOMAIN_COMPENDIUM.template.md`**: 4-tier knowledge vault architecture.
+* **`SYNTHESIS_MATRIX.template.md`**: Combinatorial idea generation matrix.
+* **`HOOKS_VAULT_26.md`**: 26 battle-tested viral hook formulas across 5 categories.
+* **`REELS_SCRIPT.template.md`**: 30-45s shooting script with teleprompter and timing breakdown.
+* **`CAROUSEL.template.md`**: Slide-by-slide 1080×1350 carousel blueprint.
+* **`CONTENT_REGISTRY.template.md`**: Memory bank for published/planned content and facet balance.
+
+### 3. Verification Code (`tools/`)
+* **`tools/lint_content.py`**: Standalone Python 3.10+ linter (zero dependencies).
+* **`tools/test_linter.py`**: Unit test suite verifying all anti-slop rules.
 
 ---
 
-## 🚀 Quickstart (5-Minute Setup)
+## 🚀 Quickstart: Run Your Content Studio in 4 Steps
 
 ### 1. Clone the repository
 ```bash
@@ -78,47 +96,33 @@ cd creator-core-engine
 ```
 
 ### 2. Extract Your Identity Core
-Have your AI agent run the `identity-extractor` skill (or manually fill [templates/IDENTITY_CORE.template.md](templates/IDENTITY_CORE.template.md)):
-* Document your real stamina limits (e.g. "90-minute sprinter, not an 8-hour marathoner").
-* List 3-5 authentic career mistakes or burnout episodes.
-* Define what you hate hearing in your industry (your anti-values).
+Ask your AI agent:
+> *"Run the `identity-extractor` skill. Interview me on my real working limits, past failures, and industry pet peeves, then fill `IDENTITY_CORE.md`."*
 
 ### 3. Build Your Domain Compendium
-Fill [templates/DOMAIN_COMPENDIUM.template.md](templates/DOMAIN_COMPENDIUM.template.md) with 3-4 foundational disciplines rather than surface-level tips:
-* **Philosophy:** Stoicism, Non-duality, Epistemology.
-* **Psychology:** Internal Family Systems, Jungian Shadow, Behavioral Economics.
-* **Biology / Science:** Ultradian rhythms, Dopamine baseline, Endocrinology.
-* **Your Tool:** Your proprietary framework or method.
+Ask your AI agent:
+> *"Run `compendium-builder`. Help me organize my domain knowledge into 4 fundamental layers (Philosophy, Psychology, Science, Tool)."*
 
-### 4. Synthesize Content
-Prompt your agent:
-> *"Using `IDENTITY_CORE.md` and `DOMAIN_COMPENDIUM.md`, synthesize 3 content angles that collide [Model X from Layer 1] with [Limit Y from Layer 3]. Run all drafts through `tools/lint_content.py` before presenting."*
+### 4. Produce High-Retention Formats
+* **For Reels:** *"Using `reels-scriptwriter`, turn concept [X] into a 35-second shooting script with teleprompter text and a hook from `HOOKS_VAULT_26.md`."*
+* **For Carousels:** *"Using `carousel-architect`, create a 10-slide 1080x1350 carousel on topic [Y] focused on saves."*
+* **For Threads:** *"Using `threads-creator`, write a 3-post thread under 500 chars per post, and validate via `tools/lint_content.py`."*
 
 ---
 
 ## 🔬 The Anti-Slop Gatekeeper (`lint_content.py`)
 
-Every post generated by this engine must pass automated inspection:
-
+Every piece of copy must pass automated CLI inspection:
 ```bash
 python tools/lint_content.py path/to/draft.md --max-len 500
 ```
 
 ### What It Catches Mechanically:
-* ❌ **Em-dashes (`—`):** Forbidden in short-form social copy. The #1 cadence tell of ChatGPT/Claude.
-* ❌ **Clickbait Cliches:** *"Знакомо чувство?", "Тред о том, почему... 👇", "Dive deep", "Game-changer"*.
+* ❌ **Em-dashes (`—`):** Forbidden in short-form copy. The #1 tell of ChatGPT/Claude.
+* ❌ **Clickbait Clichés:** *"Знакомо чувство?", "Тред о том, почему... 👇", "Dive deep", "Game-changer"*.
 * ❌ **Pompous Buzzwords:** *"квантовый", "план на миллион", "сервер IBM", "сверхмощный"*.
 * ❌ **Premature Cold-Start CTAs:** Hard-selling or lead-magnet harvesting in introductory brand posts.
 * ❌ **Platform Limits:** Strictly validates characters against network constraints (e.g. 500 chars for Threads).
-
----
-
-## 📚 Real-World Comparison
-
-| Scenario | Generic AI Generation | Creator Core Engine Synthesis |
-| :--- | :--- | :--- |
-| **Productivity / Burnout** | *"5 time-management hacks you need to know! Use the Pomodoro technique to supercharge your hustle 👇"* | *"Долго не мог понять, почему после пары часов работы меня выключает, хотя планов полно. Дело не в дисциплине: скорость мышления не совпадает с емкостью тела..."* |
-| **Health / Dieting** | *"Why 95% of diets fail! The secret metabolism booster that will change your fitness journey forever 👇"* | *"Четыре года я считал калории до грамма и бегал 6 раз в неделю. Итог: упавший ферритин и плато. Тело не калькулятор, а адаптивная гормональная система..."* |
 
 ---
 
@@ -127,6 +131,7 @@ python tools/lint_content.py path/to/draft.md --max-len 500
 * **Google Antigravity**: Supported natively via [GEMINI.md](GEMINI.md) and `.agents/skills/`.
 * **Claude Code**: Supported via [CLAUDE.md](CLAUDE.md).
 * **Cursor / Windsurf**: Supported via [AGENTS.md](AGENTS.md).
+* **ChatGPT / Claude Web**: Upload `IDENTITY_CORE.md` and `DOMAIN_COMPENDIUM.md` to Project Knowledge.
 
 ---
 
