@@ -3,6 +3,8 @@
 > **The Anti-Slop Content Operating System for AI Coding Agents and Human Creators.**  
 > Transform AI from a generator of generic corporate slop into an authentic, deeply grounded extension of your real-world expertise.
 
+[🇷🇺 Читать инструкцию на русском](README_RU.md) • [Templates](templates/) • [Examples](examples/) • [CLI Linter](tools/lint_content.py)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](tools/lint_content.py)
 [![Architecture: Creator Core](https://img.shields.io/badge/Architecture-Identity%20%2B%20Compendium-orange.svg)](#architecture)
