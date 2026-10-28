@@ -138,7 +138,8 @@ python tools/lint_content.py path/to/draft.md --max-len 500
 ## 👤 Author
 
 Developed by **Sergey Voronin** ([@harmonious_thinker](https://t.me/harmonious_thinker)).  
-Systems researcher, developer, and author exploring the intersection of consciousness, cognitive mechanics, and human operating systems.
+* Telegram Channel: [@harmonious_thinker_space](https://t.me/harmonious_thinker_space)  
+* Systems researcher, developer, and author exploring the intersection of consciousness, cognitive mechanics, and human operating systems.
 
 ---
 

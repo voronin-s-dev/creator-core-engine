@@ -151,7 +151,8 @@ python tools/lint_content.py путь_к_файлу.md --max-len 500
 ## 👤 Автор
 
 Разработано **Сергеем Ворониным** ([@harmonious_thinker](https://t.me/harmonious_thinker)).  
-Исследователь систем сознания, разработчик и автор платформы глубокого анализа личности.
+* Авторский Telegram-канал: [@harmonious_thinker_space](https://t.me/harmonious_thinker_space)  
+* Исследователь систем сознания, разработчик и автор платформы глубокого анализа личности.
 
 ---
 
